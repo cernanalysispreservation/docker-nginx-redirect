@@ -16,7 +16,7 @@ A very simple container to redirect HTTP traffic to another server, based on `ng
 - `SERVER_REDIRECT_SCHEME` - optionally define scheme to redirect to 
    - if not set but X-Forwarded-Proto is send as request header with value 'https' this will be used. 
      In all other cases nginx var `$scheme` is used
-- `SERVER_REDIRECT_CODE` - optionally define the http status code to use for redirection
+- `SERVER_DIRECT_CODE` - optionally define the http status code to use for redirection
    - if not set or not in list of allowed codes 301 is used as default
    - allowed Codes are: 301, 302, 303, 307, 308
  - `SERVER_REDIRECT_POST_CODE` - optionally define the http code to use for POST redirection
